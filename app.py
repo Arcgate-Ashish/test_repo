@@ -1,12 +1,14 @@
+# 1) this is branching created in the code
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
+# 2) this is the router postman 
 
 @app.route('/', methods=['GET', 'POST']) # To render Homepage
 def home_page():
     return render_template('index.html')
-
+# 3) cal all the function
 @app.route('/calculator', methods=['POST'])  # This will be called from UI
 def math_operation():
     if (request.method=='POST'):
