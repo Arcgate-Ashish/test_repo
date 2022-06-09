@@ -28,7 +28,7 @@ def math_operation():
             r = num1 / num2
             result = 'the quotient when ' + str(num1) + ' is divided by ' + str(num2) + ' is ' + str(r)
         return render_template('results.html',result=result)
-
+# dance india dance
 @app.route('/via_postman', methods=['POST']) # for calling the API from Postman/SOAPUI
 def math_operation_via_postman():
     if (request.method=='POST'):
